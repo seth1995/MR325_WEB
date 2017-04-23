@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+	text-align: center;
+	font-size: 60px;
+}
+img { border: 0px; }
+#focus img{
+	width: 1172px;
+	height: 600px;
+}
+.range{
+  width: 1100px;
+  text-align: center;
+  
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 1100px;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-track {
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
+    border-color: transparent; /*去除原有边框*/
+    color: transparent; /*去除轨道内的竖线*/
+}
+
+input[type=range]::-ms-thumb {
+    border: solid 0.125em rgba(205, 224, 230, 0.5);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -5px;
+    box-shadow: 0 .125em .125em #3b4547;
+}
+
+input[type=range]::-ms-fill-lower {
+    /*进度条已填充的部分*/
+    height: 22px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #059CFA, white 100%, white);
+}
+
+input[type=range]::-ms-fill-upper {
+    /*进度条未填充的部分*/
+    height: 22px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: linear-gradient(to right, #059CFA, white 100%, white);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+}
+#section{
+    text-align: center;
+}
+.bannerbox { width: 1172px; height: 600px; overflow: hidden; margin: 0px auto; }
+#focus { width: 1172px; height: 600px; clear: both; overflow: hidden; position: relative; float: left; }
+    #focus ul { width: 1172px; height: 600px; float: left; position: absolute; clear: both; padding: 0px; margin: 0px; }
+        #focus ul li { float: left; width: 1172px; height: 600px; overflow: hidden; position: relative; padding: 0px; margin: 0px; }
+    #focus .preNext { width: 550px; height: 447px; position: absolute; top: 0px; cursor: pointer; }
+    #focus .pre { left: 0; background: url(../images/sprite.png) no-repeat left center; }
+    #focus .next { right: 0; background: url(../images/sprite1.png) no-repeat right center; }
