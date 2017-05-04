@@ -4836,7 +4836,7 @@ tbody.collapse.in {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 10px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -4857,7 +4857,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 10px) {
   .navbar-nav {
     float: left;
     margin: 0;
